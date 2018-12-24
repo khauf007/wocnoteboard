@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Noteboard</title>
+	<link rel="stylesheet" type="text/css" href="note.css">
+</head>
+<body>
+	  <form>
+          <textarea name="text"></textarea>
+      </form>
+	  <button onclick="changeText()" id="bold2"><img src="" id="bold"></button>
+	  <button onclick="changeText2()" id="bold3"><img src="" id="bold_"></button>
+     <button class="toolbar" onclick="disp2tool()"><img src="images/download1.jpg" id="toolbutton"></button>
+     <button class="toolbar" onclick="disp1tool()"><img src="images/upward.png" id="toolbutton2"></button>
+     <script type="text/javascript">
+     	function disp1tool()
+     	{
+     		var image = document.getElementById('bold');
+     		image.src="images/bold.jpg";
+     		var image2 = document.getElementById('bold_');
+     		image2.src="images/unbold.jpg";
+     	}
+     	function disp2tool()
+     	{
+     		var image = document.getElementById('bold');
+     		var image2 = document.getElementById('bold_');
+
+     		image.src="";
+     		image2.src="";
+     	}
+     	function changeText(){ 
+            document.forms[0].text.style.cssText = "font-weight: bold"; 
+            document.getElementById('bold').src = "images/bold2.jpg";
+             }
+        function changetext2(){
+        	document.forms[0].text.style.cssText = "font-weight: normal";
+        	document.getElementById('bold_').src = "images/unbold2.jpg";
+        }
+
+     </script>
+</body>
+</html>
