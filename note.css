@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #toolbutton{
 	position: fixed;
 	bottom: 0;
@@ -28,3 +29,76 @@
 	height: 100px;
 	border: 2px solid red;
 }
+#size{
+	position: fixed;
+	bottom: 100px;
+	left: 300px; 
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+}
+#size_{
+	position: fixed;
+	bottom: 100px;
+	left: 400px; 
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+}
+.lowsize{
+	font-size: 16px;
+	text-decoration: none;
+	width: 100%;
+	height: 100vw;
+}
+.highsize{
+	font-size: 32px;
+}
+#italic_{
+	position: fixed;
+	bottom: 100px;
+	left: 500px; 
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+}
+#underlined_{
+	position: fixed;
+	bottom: 100px;
+	left: 600px; 
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+}
+=======
+#toolbutton{
+	position: fixed;
+	bottom: 0;
+	right: 700px;
+	width: 200px;
+	height: 100px;
+}
+#toolbutton2{
+	position: fixed;
+	bottom: 0;
+	right: 500px;
+	width: 200px;
+	height: 100px;
+}
+#bold{
+	position: fixed;
+	bottom: 100px;
+	left: 100px; 
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+}
+#bold_{
+	position: fixed;
+	bottom: 100px;
+	left: 200px; 
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+}
+>>>>>>> d8722ee40fdbfa0ab9f5b5a7a8f8dfdfa9c14ad6

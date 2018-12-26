@@ -1,3 +1,84 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Noteboard</title>
+	<link rel="stylesheet" type="text/css" href="note.css">
+</head>
+<body>
+	  <form>
+          <textarea name="text" class="lowsize" id="textarea" style="text-decoration: none"></textarea>
+      </form>
+	  <button onclick="changeText()" id="bold2"><img src="" id="bold"></button>
+	  <button onclick="changeText2()" id="bold3"><img src="" id="bold_"></button>
+	   <button onclick="changeText3()" id="size1"><img src="" id="size"></button>
+	   <button onclick="changeText4()" id="size2"><img src="" id="size_"></button>
+	   <button onclick="changeText5()" id="italic"><img src="" id="italic_"></button>
+	   <button onclick="changeText6()" id="underlined"><img src="" id="underlined_"></button>
+     <button class="toolbar" onclick="disp2tool()"><img src="images/download1.jpg" id="toolbutton"></button>
+     <button class="toolbar" onclick="disp1tool()"><img src="images/upward.png" id="toolbutton2"></button>
+     <script type="text/javascript">
+     	function disp1tool()
+     	{
+     		var image = document.getElementById('bold');
+     		image.src="images/bold.jpg";
+     		var image2 = document.getElementById('bold_');
+     		image2.src="images/unbold.jpg";
+     		var size = document.getElementById('size');
+     		size.src = "images/fontsize.jpg";
+     		var size2 = document.getElementById('size_');
+     		size2.src = "images/fontsize2.jpg";
+     		var italic = document.getElementById('italic_');
+     		italic.src = "images/italic.jpg";
+     		var underlined = document.getElementById('underlined_');
+     		underlined.src = "images/underline.jpg"
+     	}
+     	function disp2tool()
+     	{
+     		var image = document.getElementById('bold');
+     		var image2 = document.getElementById('bold_');
+     		var size = document.getElementById('size');
+     		var size2 = document.getElementById('size_');
+     		var italic = document.getElementById('italic_')
+     		var underlined = document.getElementById('underlined_');
+     		image.src="";
+     		image2.src="";
+     		size.src="";
+     		size2.src="";
+     		italic.src="";
+     		underlined.src="";
+     	}
+     	function changeText(){ 
+            document.getElementById('textarea').style.fontWeight = "bold"; 
+             }
+        function changeText2(){
+        	document.forms[0].text.style.fontWeight = "normal";
+        }
+        function changeText3(){
+            document.getElementById('textarea').className = "highsize";
+        }
+         function changeText4(){
+            document.getElementById('textarea').className = "lowsize";
+        }
+        function changeText5(){
+        	var target = document.getElementById("textarea");
+    if( target.style.fontStyle == "italic" ) {
+        target.style.fontStyle = "normal";
+    } else {
+        target.style.fontStyle = "italic";
+    }
+        }
+        function changeText6(){
+        	var target = document.getElementById("textarea");
+    if( target.style.textDecoration == "none" ) {
+        target.style.textDecoration = "underline";
+    } else if(target.style.textDecoration == "underline"){
+        target.style.textDecoration = "none";
+    }
+        }
+     </script>
+</body>
+=======
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,4 +120,5 @@
 
      </script>
 </body>
+>>>>>>> d8722ee40fdbfa0ab9f5b5a7a8f8dfdfa9c14ad6
 </html>
